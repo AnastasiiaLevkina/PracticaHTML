@@ -1,53 +1,95 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 #azul{
-    display: flex;
     background-color: #0A91AB;
     width: 100%;
     height: 150px;
-    position: sticky;
+    position: static;
+    text-align: center;
+    font-size:25px;
+    color:#FFC045;
 }
 
 #amarillo{
     display: flex;
     background-color: #FFC045;
     width: 100%;
-    height: 60px;
+    height: 75px;
     position: sticky;
-    flex-direction: row;
-    justify-content: center;
+    top: 0;
+    justify-content: space-around;
+    font-family: 'Maven Pro';
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.726);
 }
+
 h1{
     color: #0A91AB;
 }
 
-#container{
-    flex-direction: row;
+.container{
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    height: 650px;
 }
+
 #item{
-    display: flex;
+    float: left;
     width: 25%;
-    border: 1;
+    height: 300px;
+    overflow: hidden;
+    border-style: dashed;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #FFC045;
 }
 
 #poster{
-    width: 250px;
-    height: 150x;
+    flex-shrink: 0;
+    max-width:100%;
+    height:auto;
+}
+
+button{
+    line-height: 12px;
+    width: 18px;
+    font-size: 8pt;
+    font-family: Helvetica;
+    position: fixed; 
+    top:0; 
+    right:0;
 }
 
 #trucos{
-    display: flex;
     background-color: #0A90AB25;
     width: 25%;
     height: 100px;
+    border-style: dotted;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+#noticia{
     float: left;
+    display: flex;
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #0A90AB25;
 }
 
 footer{
     display: flex;
     background-color: #8A8070;
+    position: static;
+    bottom: 0;
     width: 100%;
-    height: 60px;
-    position: absolute;
-    top: 100%;
+    height: 100px;
 }
