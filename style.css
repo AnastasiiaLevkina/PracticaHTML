@@ -43,6 +43,9 @@ html, body{
     margin-left: 10px;
 }
 
+.menu:hover{
+    color:#0A91AB;
+}
 
 h1{
     font-size: 1000;
