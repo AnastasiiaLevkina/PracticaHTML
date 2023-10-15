@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>Ejercicio 6</title>
-        <link rel="icon" type="image/x-icon" href=""/>
+        <link rel="icon" type="image/x-icon" href="./images/m04play.png"/>
         <meta charset="es">
         <meta name="descrition" content="Práctica html">        
         <meta name="author" content="Anastasiia Levkina">
@@ -11,65 +11,200 @@
     </head>
 
     <body>
+        <div id="azul">
+            <p>M04PLAY</p>
+        </div>
         <header>
-            <div id="azul">
-                M04PLAY
-            </div>
             <div id="amarillo">
-                <a href="./listado.html">M04PLAY</a>
+                <a href="./index.html">M04PLAY</a>
                 <a href="./listado.html">LEARNING</a>
                 <a href="./listado.html">PLAY</a>
-                <a href="./listado.html">CONTACTO</a>
+                <a href="./contactos.html">CONTACTO</a>
             </div>
         </header>
-        <h1>Videojuegos</h1>
-        <div class="container">
-            <column id = "item">
-                <figure>
-                    <img id="poster" src="https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTY5NjQwMjc4OA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" alt="Mar">
-                </figure>
-                <button>más info</button>
-            </column>
-            <column id = "item">
-                <figure>
-                    <img id="poster" src="https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTY5NjQwMjc4OA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" alt="Mar">
-                </figure>
-            </column>
-            <column id = "item">
-                <figure>
-                    <img id="poster" src="https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTY5NjQwMjc4OA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" alt="Mar">
-                </figure>
-            </column>
-            <column id = "item">
-                <figure>
-                    <img id="poster" src="https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTY5NjQwMjc4OA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" alt="Mar">
-                </figure>
-            </column>
-            <column id = "item">
-                <figure>
-                    <img id="poster" src="https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTY5NjQwMjc4OA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" alt="Mar">
-                </figure>
-            </column>
-            
+        <div style="margin-left: 20px;">
+            <h1>Videojuegos</h1>
         </div>
+        <section class="container">
+            <div class = "juego" id="sekiro">
+                <figure>
+                    <img class="poster" src="./images/sekiro.jpg" alt="">
+                </figure>
+                <div class="infojuego">
+                    <p class = "titulo">SEKIRO: Shadows die twice</p>
+                    <p class="texto">Sekiro: Shadows Die Twice es un intenso juego de acción y aventura en tercera persona que tiene lugar en el sangriento Japón del siglo XIV. Ponte en la piel de un guerrero caído en desgracia que ha sido rescatado de los brazos de la muerte y debe salvar a su maestro y vengarse de su archienemigo.</p>
+                </div>
+                <form>
+                    <button formaction="./sekiro.html" class="info">más info</button>
+                </form>
+            </div>
+            <div class ="juego" id="ghostrunner">
+                <div>
+                    <figure>
+                        <img class="poster" src="./images/ghostrunner.jpeg" alt="">
+                    </figure>
+                </div>
+                <div class="infojuego">
+                    <p class="titulo">GHOSTRUNNER</p>
+                    <p class="texto">Ghostrunner es un slasher FPP intenso repleto de acción vertiginosa, ambientado en una megaestructura ciberpunk sombría. Sube a la Torre Dharma, el último refugio de la humanidad, después de un cataclismo que acabó con el mundo. Ábrete camino desde abajo hacia arriba y enfréntate al tiránico Keymaster para vengarte.</p>
+                </div>
+                <form>
+                    <button formaction="./ghostrunner.html" class="info">más info</button>
+                </form>
+            </div>
+            <div class="juego" id="moratlkombat">
+                <div>
+                    <figure>
+                        <img class="poster" src="./images/mortal_kombat.jpeg">
+                    </figure>
+                </div>
+                <div class="infojuego">
+                    <p class="titulo">Mortal Kombat X</p>
+                    <p class="texto">Mortal Kombat X combina una presentación cinematográfica incomparable con una jugabilidad completamente nueva. Por primera vez, los jugadores pueden elegir entre múltiples variaciones de cada personaje que impactan tanto en la estrategia como en el estilo de lucha.</p>
+                </div>
+                <form>
+                    <button formaction="./listado.html" class="info">más info</button>
+                </form>
+            </div>
+            <div class = "juego" id="subnautica">
+                <div>
+                    <figure>
+                        <img class="poster" src="./images/subnautica.jpeg">
+                    </figure>
+                </div>
+                <div class="infojuego">
+                    <p class="titulo">Subnautica</p>
+                    <p class="texto">Desciende a las profundidades de un mundo submarino alienígena lleno de belleza y peligros. Crea equipamiento, pilota submarinos, terraforma el terreno, y burla los peligros para explorar exhuberantes arrecifes de coral, volcanes, sistemas de cuevas y más - Todo mientras intentas sobrevivir.</p>
+                </div>
+                <form>
+                    <button formaction="./listado.html" class="info">más info</button>
+                </form>
+            </div>
+            <div class = "juego" id="atomicheart">
+                <div>
+                    <figure>
+                        <img class="poster"src="./images/atomic_heart.jpg">
+                    </figure>
+                </div>
+                <div class="infojuego">
+                    <p class="titulo">Atomic Heart</p>
+                    <p class="texto">En un mundo utópico loco y sublime, participa en encuentros explosivos. Adapta tu estilo de lucha a cada oponente, utiliza tu entorno y mejora tu equipo para cumplir tu misión. Si quieres llegar a la verdad, tendrás que pagar con sangre.</p>
+                </div>
+                <form>
+                    <button formaction="./listado.html" class="info">más info</button>
+                </form>
+            </div>
+            <div class = "juego" id="blasphemous">
+                <figure>
+                    <img class="poster" src="./images/blasphemous.jpg">
+                </figure>
+                <div class="infojuego">
+                    <p class="titulo">Blasphemous</p>
+                    <p class="texto">Blasphemous es un brutal juego de plataformas y acción con hábiles combates hack'n slash ambientado en el mundo de pesadilla de Cvstodia. Explora, mejora tus habilidades y realiza ejecuciones salvajes contra las hordas de enemigos que se interponen entre tú y tu búsqueda para romper la condenación eterna.</p>
+                </div>
+                <form>
+                    <button formaction="./listado.html" class="info">más info</button>
+                </form>
+            </div>
+            
+        </section>
         <aside id="trucos">
-            
+            <div>
+                <h1>Trucos</h1>
+            </div>
+            <div id="truco1">
+                <p class="titulo">Atomic Heart</p>
+                <p class="texto2">Aprende a esquivar</p>
+            </div>
         </aside>
-
-        <!--Notícias-->
-        <h1 text-align="center">Noticias</h1>
-        <div class="container">
-            <column id = "noticia">
-                <figure>
-                    <img id="poster" src="https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTY5NjQwMjc4OA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" alt="Mar">
-                </figure>
-            </column>
+        <div style="flex-direction: column;">
+            <div style="height: 2%; text-align: center;">
+                <h1>Noticias</h1>
+            </div>
+            <div class="container2">
+                <div class = "noticia" id="noticia1">
+                    <p class="hora">13:09 14/10/2023</p>
+                    <hr class="line">
+                    <p class="titular">Así es Empire of the Ants, un fotorrealista juego de estrategia con hormigas que llega en 2024</p>
+                    <p class="texto2">El primer tráiler de Empire of the Ants, un juego de estrategia protagonizado por hormigas, deja ver su espectacular apartado gráfico fotorrealista. Llega en 2024 a PC, PS5 y otras consolas.</p>                   
+                    <figure>                   
+                        <img class="imagen" src="./images/hormiga.jpg">
+                    </figure>
+                    <form>
+                        <button formaction="https://vandal.elespanol.com/noticia/1350766091/asi-es-empire-of-the-ants-un-fotorrealista-juego-de-estrategia-con-hormigas-que-llega-en-2024/" class="leer">
+                            Leer Más
+                        </button>
+                    </form>
+                </div>
+                <div class = "noticia" id="noticia2">
+                    <p class="hora">18:50 12/10/2023</p>
+                    <hr class="line">
+                    <p class="titular">Dead Island 2 anuncia la fecha de lanzamiento de su primera expansión con historia: HAUS</p>
+                    <p class="texto2">Se trata de una aventura totalmente nueva que estrenará una nueva localización y otro buen puñado de novedades para que sigamos reventando zombis y haciendo parkour.</p>                   
+                    <figure>                   
+                        <img class="imagen" src="./images/deadisland.jpg">
+                    </figure>
+                    <form>
+                        <button formaction="https://vandal.elespanol.com/noticia/1350766050/dead-island-2-anuncia-la-fecha-de-lanzamiento-de-su-primera-expansion-con-historia-haus/" class="leer">
+                            Leer Más
+                        </button>
+                    </form>
+                 </div>
+                <div class = "noticia" id="noticia3">
+                    <p class="hora">10:26 12/10/2023</p>
+                    <hr class="line">
+                    <p class="titular">The Front, el nuevo shooter de supervivencia que quiere triunfar, ya está disponible en acceso anticipado</p>
+                    <p class="texto2">Samar Studio ha puesto a la venta su juego a través de la plataforma de acceso anticipado de Steam y también ha publicado la hoja de ruta de su desarrollo.</p>                   
+                    <figure>                   
+                        <img class="imagen" src="./images/front.jpg">
+                    </figure>
+                    <form>
+                        <button formaction="https://vandal.elespanol.com/noticia/1350766036/the-front-el-nuevo-shooter-de-supervivencia-que-quiere-triunfar-ya-esta-disponible-en-acceso-anticipado/" class="leer">
+                            Leer Más
+                        </button>
+                    </form>
+                </div>
+                <div class = "noticia" id="noticia4">
+                    <p class="hora">15:28 6/10/2023</p>
+                    <hr class="line">
+                    <p class="titular">CD Projekt no cierra la puerta a que la secuela de Cyberpunk 2077 sea en tercera persona</p>
+                    <p class="texto2">Un miembro de la desarrolladora polaca explica el motivo por el que Cyberpunk 2077 se diseñó en primera persona y no descarta que se implemente un modo en tercera persona o híbrido en Project Orion.</p>                   
+                    <figure>                   
+                        <img class="imagen" src="./images/noticia4.jpg">
+                    </figure>
+                    <form>
+                        <button formaction="https://vandal.elespanol.com/noticia/1350765908/cd-projekt-no-cierra-la-puerta-a-que-la-secuela-de-cyberpunk-2077-sea-en-tercera-persona/" class="leer">
+                            Leer Más
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
-
+        <br>
+        <div style="text-align: center;">
+            <h1>Ranking</h1>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div class="usuario">
+                <figure>
+                    <img class="perfil" scr="../images/noticia4.jpg">
+                </figure>
+                <p class="titular">Nombre</p>
+                <p class="texto2">Puntuación X</p>
+            </div>
+        </div>
+        <footer>
+            <div style="position: absolute; top: 0; left: 10px; align-items: center;"">
+                <a href="https://www.instagram.com/iTecBcn/">INSTAGRAM</a>
+                <a href="https://www.youtube.com/channel/UCoaBtXoia1xR2T3Bb5FRUnQ">YouTube</a>
+                <a href="https://twitter.com/iTecBcn/">X</a>
+            </div>
+            <div style="position: absolute; top: 0; right: 10px;">
+                <p>Carrer d'Aiguablava 121<br>08033 Barcelona</p>
+            </div>
+            <div style="position: absolute; bottom: 0; left: 50%">
+                <p>Copyright</p>
+            </div>
+        </footer>
     </body>
-
-    <footer>
-        <a>FACEBOOK</a>
-    </footer>
-
 </html>

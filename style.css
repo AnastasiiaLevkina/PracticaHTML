@@ -5,91 +5,262 @@ html, body{
 }
 
 #azul{
+    position: static;
+    top: 0;
+    display: flex;
     background-color: #0A91AB;
     width: 100%;
-    height: 150px;
-    position: static;
-    text-align: center;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
     font-size:25px;
     color:#FFC045;
 }
+
+
+ header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+ }
 
 #amarillo{
     display: flex;
     background-color: #FFC045;
     width: 100%;
     height: 75px;
-    position: sticky;
-    top: 0;
-    justify-content: space-around;
-    font-family: 'Maven Pro';
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 550;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.726);
 }
 
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
 h1{
+    font-size: 1000;
     color: #0A91AB;
 }
 
 .container{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-evenly;
-    height: 650px;
+    height: 1100px;
 }
 
-#item{
-    float: left;
-    width: 25%;
-    height: 300px;
-    overflow: hidden;
-    border-style: dashed;
-    border-width: 1px;
-    border-radius: 5px;
-    border-color: #FFC045;
-}
-
-#poster{
-    flex-shrink: 0;
-    max-width:100%;
-    height:auto;
-}
-
-button{
-    line-height: 12px;
-    width: 18px;
-    font-size: 8pt;
-    font-family: Helvetica;
-    position: fixed; 
-    top:0; 
-    right:0;
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 950px;
 }
 
 #trucos{
+    float: left;
+    margin-left: 20px;
     background-color: #0A90AB25;
-    width: 25%;
-    height: 100px;
+    width: 20%;
+    height: 1045px;
     border-style: dotted;
-    border-width: 2px;
+    border-width: 3px;
     border-radius: 5px;
     border-color: black;
+    text-align: center;
 }
 
-#noticia{
+.juego{
+    position: relative;
     float: left;
+    width: 25%;
+    height: 500px;
     display: flex;
-    width: 30%;
-    height: 300px;
-    overflow: hidden;
-    border-width: 1px;
-    border-radius: 5px;
-    border-color: #0A90AB25;
+    flex-direction: column;
+    align-items: normal;
+    contain: paint;
+
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #FFC045;
+}
+
+.noticia{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 450px;
+    contain: paint;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #0A91AB;
+}
+
+.listajuego{
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #FFC045;
+}
+
+.usuario{
+    position: relative;
+    float: left;
+    width: 15%;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    contain: paint;
+}
+
+.poster{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.imagen{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.perfil{ 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hora{
+    position: relative;
+    top: 0;
+    left: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.infojuego{
+    position: absolute; 
+    top: 50%;
+}
+
+.titulo{
+    color:#FFC045;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.texto{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+    text-justify: auto;
+}
+
+.titular{
+    color:#FFC045;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.texto2{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info{
+    position: absolute;
+    bottom:10px; 
+    right:10px;
+    width: 75px;
+    height: 30px;
+    font-family: Helvetica;
+    border-radius: 10px;
+    background-color: #FFC045;
+    border: none;
+    cursor: pointer;
+}
+
+.leer{
+    position: absolute;
+    top: 47%; 
+    right:10px;
+    width: 75px;
+    height: 30px;
+    font-family: Helvetica;
+    color: #5e057a;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #FFC045;
+    border: none;
+    cursor: pointer;
+}
+
+.line{
+    width: 90%;
+    height: 5px;
+    border: 0;
+    background-color: #FFC045;
 }
 
 footer{
     display: flex;
     background-color: #8A8070;
-    position: static;
+    position: relative;
     bottom: 0;
+    margin-top: 50px;
     width: 100%;
     height: 100px;
+}
+
+.contacto{
+    display: flex;
+    background-color: #0A91AB;
+    position: relative;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 1000px;
+    flex-direction: column;
+    text-align: center;
 }
