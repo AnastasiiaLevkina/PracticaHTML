@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Ejercicio 6</title>
+        <title>Contactar</title>
         <link rel="icon" type="image/x-icon" href="./images/letter.png"/>
         <meta charset="es">
         <meta name="descrition" content="Práctica html">        
@@ -15,19 +15,46 @@
         </div>
         <header>
             <div id="amarillo">
-                <a href="./index.html">M04PLAY</a>
-                <a href="./listado.html">LEARNING</a>
-                <a href="./listado.html">PLAY</a>
-                <a href="./contactos.html">CONTACTO</a>
+                <a class="menu" href="./index.html">M04PLAY</a>
+                <a class ="menu" href="./listado.html">LEARNING</a>
+                <a class ="menu" href="./listado.html">PLAY</a>
+                <a class ="menu" href="./contactos.html">CONTACTO</a>
             </div>
         </header>
         <div class="contacto">
             <p style="color: #FFC045; font-size: 50px;">CONTACTAR</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            <hr class="line">
-            <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p></p>
-            <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p></p>
-            <form>
+            <fieldset class="texto3">
+                <legend class="titulo">M04PLAY</legend>
+                <p>Tlf: 937 070 020</p>
+                <p>Institut Tecnològic de Barcelona 08076194</p>
+                <p>c/ aiguablava 121, 08033 Barcelona</p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend class="titulo">E-mail</legend>
+                <p class="texto3">info@itb.cat </p>
+            </fieldset>
+            <br>
+            <form action="/acion_page.php" method="POST" enctype="multipart/form-data" class="texto3">
+                <fieldset>
+                    <legend class="titulo">Formulario de contacto</legend>
+                    <div class="formulario">
+                        <label>Nombre </label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div><br>
+                    <div class="formulario">
+                        <label>Apellidos </label>
+                        <input type="text" id="apellidos" name="apellidos">
+                    </div><br>
+                    <div class="formulario">
+                        <label>Teléfono </label>
+                        <input type="text" id="telefono" name="telefono">
+                    </div><br>
+                    <div class="formulario">
+                        <label>E-mail </label>
+                        <input type="text" id="correo" name="correo">
+                    </div><br>
+                </fieldset>
             </form>
         </div>
     </body>
