@@ -14,50 +14,80 @@
             <p>M04PLAY</p>
         </div>
         <header class="amarillo">
-            <a class="menu" href="./index.html">M04PLAY</a>
-            <a class ="menu" href="./listado.html">LEARNING</a>
-            <a class ="menu" href="./listado.html">PLAY</a>
-            <a class ="menu" href="./contactos.html">CONTACTO</a>
+            <nav>
+                <a class="menu" href="./index.html">M04PLAY</a>
+                <a class ="menu" href="./listado.html">LEARNING</a>
+                <a class ="menu" href="./listado.html">PLAY</a>
+                <a class ="menu" href="./contactos.html">CONTACTO</a>
+            </nav>
         </header>
         <div class="contacto">
             <p style="color: #FFC045; font-size: 50px;">CONTACTAR</p>
-            <fieldset class="texto3">
-                <legend class="titulo">M04PLAY</legend>
-                <p>Tlf: 937 070 020</p>
-                <p>Institut Tecnològic de Barcelona 08076194</p>
-                <p>c/ aiguablava 121, 08033 Barcelona</p>
+            <fieldset>
+                <legend class="tituloSinHover">ITB</legend>
+                <a class="texto3" href="tel:+34937070020">Tlf: 937 070 020</a><br><br>
+                <a class="texto3" href="https://www.itb.cat/">Institut Tecnològic de Barcelona 08076194</a><br><br>
+                <a class="texto3" href="https://goo.gl/maps/E5orQNdKWD82">c/ aiguablava 121, 08033 Barcelona</a><br><br>
             </fieldset>
             <br>
             <fieldset>
-                <legend class="titulo">E-mail</legend>
-                <p class="texto3">info@itb.cat </p>
+                <legend class="tituloSinHover">E-mail</legend>
+                <a class="texto3" href="mailto:info@itb.cat?subject=informació peu de web">info@itb.cat</a>
+                <br>
             </fieldset>
             <br>
             <form action="/acion_page.php" method="POST" enctype="multipart/form-data" style="display: flex; width: 100%; justify-content: center;">
                 <fieldset class="texto3">
-                    <legend class="titulo">Formulario de contacto</legend>
-                    <div class="formulario">
-                        <label>Nombre </label>
-                        <input type="text" id="nombre" name="nombre">
-                    </div><br>
-                    <div class="formulario">
-                        <label>Apellidos </label>
-                        <input type="text" id="apellidos" name="apellidos">
-                    </div><br>
-                    <div class="formulario">
-                        <label>Teléfono </label>
-                        <input type="text" id="telefono" name="telefono">
-                    </div><br>
-                    <div class="formulario">
-                        <label>E-mail </label>
-                        <input type="text" id="correo" name="correo">
-                    </div><br>
-                    <div class="formulario">
-                        <label>Confirmar E-mail </label>
-                        <input type="text" id="confirmarcorreo" name="confirmarcorreo">
-                    </div><br>
+                    <legend class="tituloSinHover">Formulario de contacto</legend>
+                    <table style="border:none; width: 100%; text-align: right;">
+                        <tbody>
+                            <tr class="formulario">
+                                <td class="columnalabel">Nombre</td>
+                                <td class="columnainput"><input class="escribir" type="text" id="nombre" name="nombre" placeholder="Nombre" required></td>
+                            </tr>
+                            <tr class="formulario">
+                                <td class="columnalabel">Apellidos</td>
+                                <td class="columnainput"><input class="escribir" type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required></td>
+                            </tr>
+                            <tr class="formulario">
+                                <td class="columnalabel">Teléfono</td>
+                                <td class="columnainput"><input class="escribir" type="text" id="telefono" name="telefono" placeholder="Teléfono" required></td>
+                            </tr>
+                            <tr class="formulario">
+                                <td class="columnalabel">E-mail</td>
+                                <td class="columnainput"><input class="escribir" type="email" id="correo" name="correo" placeholder="E-mail" required></td>
+                            </tr>
+                            <tr class="formulario">
+                                <td class="columnalabel">Confirmar E-mail</td>
+                                <td class="columnainput"><input type="email" class="escribir" id="confirmarcorreo" name="confirmarcorreo" placeholder="Confirmar E-mail" required></td>
+                            </tr>
+                            <tr class="formulario">
+                                <td class="columnalabel">Mensaje</td>
+                                <td class="columnainput"><textarea style="width: 90%; height: auto;" placeholder="Mensaje" rows="5"></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <input type="checkbox" id="privacidad" required>
+                    <label for="privacidad">Con el envío de este formulario confirmo que he leído y acepto las <a href="https://www.aepd.es/politica-de-privacidad-y-aviso-legal" style="color:#FFC045">condiciones y de la política de privacidad</a></label>
+                    <div style="position: relative; width: 100%; margin-top: 50px;">
+                        <input type="submit" value="Enviar" class="enviar">
+                    </div>
                 </fieldset>
             </form>
         </div>
+        <footer>
+            <div style="position: absolute; top: 0; left: 10px; align-items: center;">
+                <a class="menu" href="https://www.instagram.com/iTecBcn/">INSTAGRAM</a>
+                <a class="menu" href="https://www.youtube.com/channel/UCoaBtXoia1xR2T3Bb5FRUnQ">YouTube</a>
+                <a class="menu" href="https://twitter.com/iTecBcn/">X</a>
+            </div>
+            <div style="position: absolute; top: 0; right: 10px;">
+                <p>Carrer d'Aiguablava 121<br>08033 Barcelona</p>
+            </div>
+            <div style="position: absolute; bottom: 0; left: 50%">
+                <p>Copyright</p>
+            </div>
+        </footer>
     </body>
 </html>
