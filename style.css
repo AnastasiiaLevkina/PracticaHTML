@@ -45,18 +45,14 @@ html, body{
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.726);
 }
 
-
-.headerjuego{
-    position: static;
-    top: 0;
+footer{
     display: flex;
-    background-image: url(./images/bgimage4.jpg); 
+    background-color: #8A8070;
+    position: relative; 
+    bottom: 0;
+    margin-top: 20px;
     width: 100%;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
-    font-size:25px;
-    color:#FFC045;
+    height: 100px;
 }
 
 .menu{
@@ -68,6 +64,16 @@ html, body{
 
 .menu:hover{
     color:#0A91AB;
+}
+
+.menuInfo{
+    display: flex;
+    flex-direction: column;
+    width: 23%; 
+    height: auto; 
+    position: sticky; 
+    top: 50%; 
+    float: left;
 }
 
 h1{
@@ -86,21 +92,12 @@ h1{
 }
 
 .container2{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 950px;
-}
-
-.container3{
     width: 50%; 
-    height: auto; 
-    min-height: 2000px;
+    height: auto;
+    min-height: 4000px; 
     position: relative;
     top: 30px;
     left: 25%;
-    margin-bottom: 70px;
     display: flex; 
     flex-direction: column; 
     contain: paint;
@@ -192,6 +189,7 @@ h1{
     flex-direction: column;
     align-items: center;
     contain: paint;
+    margin-bottom: 10px;
 }
 
 .formulario{
@@ -203,6 +201,7 @@ h1{
 
 .columnalabel{
     width: 25%;
+    font-family: 'Kanit';
 }
 
 .columnainput{
@@ -211,17 +210,8 @@ h1{
 
 .escribir{
     width: 90%;
-    height: 85%
-}
-
-footer{
-    display: flex;
-    background-color: #8A8070;
-    position: relative; 
-    bottom: 0;
-    margin-top: 20px;
-    width: 100%;
-    height: 100px;
+    height: 85%;
+    font-family: 'Kanit';
 }
 
 fieldset{
@@ -233,6 +223,15 @@ figure{
     margin: 0;
     padding: 0;
     display: flex;
+}
+
+figcaption{
+    width: 50%;
+    font-family: 'Kanit';
+    position: relative;
+    top: 0;
+    left: 25%;
+    text-align: left;
 }
 
 .poster{
@@ -268,8 +267,17 @@ figure{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 55%;
     object-fit: cover;
+}
+
+.infoImagen{
+    width:50%;
+    height:30%;
+    position: relative;
+    left:25%;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
 .perfil{ 
@@ -297,7 +305,7 @@ figure{
     color:#FFC045;
     text-decoration: none;
     margin-left: 10px;
-    font-family: 'Kanit';
+    font-family: 'Maven Pro';
     font-weight: bolder;
     font-size: 25px;
 }
@@ -341,6 +349,7 @@ figure{
 
 .texto3{
     color:white; 
+    font-family: 'Kanit';
     font-size: 18px;
     margin-left: 15px;
     margin-right: 15px;
@@ -365,7 +374,9 @@ figure{
     position: relative; 
     top: 80px; 
     float:left; 
-    margin-left: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    scroll-margin-top: 5rem;
 }
 
 .infojuego2{
@@ -441,4 +452,39 @@ figure{
     height: 5px;
     border: 0;
     background-color: #FFC045;
+}
+
+.paginacion{
+    display: inline-block;
+    position: relative; 
+    bottom: 0; 
+    height: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.numeroPagina{
+    width: 30px;
+    height: 40px;
+    border: 1px solid;
+    border-color: rgb(238, 238, 238);
+}
+
+.numero{
+    text-decoration: underline;
+    color:black;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.numero:hover{
+    color:#0A91AB;
+}
+
+.stickyVideo{
+    width: 23%; 
+    height:24%; 
+    position: sticky; 
+    bottom: 1%; 
+    float: right; 
 }
