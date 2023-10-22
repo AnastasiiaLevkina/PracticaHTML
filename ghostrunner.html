@@ -21,17 +21,25 @@
                 <a class ="menu" href="./contactos.html">CONTACTO</a>
             </nav>
         </header>
-        <section style="width: 100%; height: auto;">
+        <section style="width: 100%; height: auto; display: flex; flex-direction: row; margin-top: 40px;">
+            <div class="menuInfo">
+                <ul style="list-style-type: none;">
+                    <li><a class="menu" href="#ficha">FICHA</a></li>
+                    <li><a class="menu" href="#requisitos">REQUISITOS</a></li>
+                    <li><a class="menu" href="#analisis">ANÁLISIS</a></li>
+                    <li><a class="menu" href="#galeria">IMÁGENES</a></li>
+                    <li><a class="menu" href="#noticias">NOTICIAS</a></li>
+                </ul>
+            </div>
             <div class="container2">
                 <figure>
                     <img src="./images/ghostrunnerbg.jpg" class="postergrande" alt="Póster de GHOSTRUNNER">
                 </figure>
                 <nav style = "position: relative; top: 50px; width: 100%; text-align: center;">
-                    <a class="menu" href="#ficha"">FICHA</a>
+                    <a class="menu" href="#ficha">FICHA</a>
                     <a class="menu" href="#requisitos">REQUISITOS</a>
                     <a class="menu" href="#analisis">ANÁLISIS</a>
-                    <a class="menu" href="./listado.html">IMÁGENES</a>
-                    <a class="menu" href="./listado.html">VÍDEOS</a>
+                    <a class="menu" href="#galeria">IMÁGENES</a>
                     <a class="menu" href="#noticias">NOTICIAS</a>
                 </nav>
                 <article id="ficha" class="infoPaginaJuego">
@@ -65,7 +73,7 @@
                     </ul>
                 </article>
                 <article id="analisis" class="infoPaginaJuego">
-                    <p class="tituloSinHover">ANÁLISIS DE GHOSTRUNNER: CYBERPUNK, PARKOUR Y KATANASS</p>
+                    <p class="tituloSinHover">ANÁLISIS DE GHOSTRUNNER: CYBERPUNK, PARKOUR Y KATANAS</p>
                     <p class="texto">Pon a prueba tus habilidades en este exigente y desafiante título de acción en el que no hay margen de error.</p>
                     <p class="texto">La estética cyberpunk lleva unos años de moda, y no es raro ver que muchos se suban al carro para 
                         aprovechar el obvio tirón del juego de CD Projekt. Esto no quiere decir que, simplemente por su apariencia, 
@@ -131,82 +139,129 @@
                     <figure>
                         <img class="infoImagen" src="./images/ghostrunner5.jpg" alt="Captura de gameplay">
                     </figure>
-                    <figcaption>Los charcos siempre son mejores con ‘ray tracing’.</figcaption>
+                    <figcaption>Los charcos siempre son mejores con ray tracing.</figcaption>
                     <hr>
+                    <p class="texto">Estos momentos nos han sorprendido positivamente, y si bien es cierto que en un primer momento 
+                        nos parecieron algo tediosos, las apariciones posteriores nos han parecido mejor diseñadas y más divertidas de completar. 
+                        Todo esto ayuda a crear <b>una experiencia más dinámica, con multitud de situaciones que le dan variedad al desarrollo.</b></p>
+                    <h1>Saca brillo a tu katana</h1>
+                    <p class="texto">Si os gustan las plataformas y la acción en primera persona y, sobre todo, <b>si te gustan los desafíos, 
+                        Ghostrunner se merece una oportunidad</b>. Es un juego complicado, con algunos picos de dificultad que van a requerir 
+                        de multitud de intentos para completar cada situación con éxito, pero es, también, un juego muy satisfactorio y 
+                        espectacular, con el que es fácil fliparse cuando te sale una buena jugada.</p>
+                        <hr>
+                    <p class="texto"><b>Análisis en PC con un código de descarga proporcionado por 505 Games.</b></p>
+                    <p class="tituloSinHover">Nota</p>
+                    <article class="notaJuego">
+                        <p>
+                            <meter value="81" class="nota" min="0" max="100"></meter>
+                            81
+                        </p>
+                        <p>
+                            <img src="./images/Metacritic.svg.png" width="30px" height="30px"> <a class="menu" href="https://www.metacritic.com/game/ghostrunner/?ftag=MCD-06-10aaa1f">metacritic</a>
+                        </p>
+                    </article>
+                    <h1>Puntos positivos</h1>
+                    <ul class="texto">
+                        <li>Espectacular de principio a fin.</li>
+                        <li>Constante sensación de progresión.</li>
+                        <li>Buena variedad de situaciones.</li>
+                    </ul>
+                    <h1>Puntos negativos</h1>
+                    <ul class="texto">
+                        <li>Falta de puntos de guardado..</li>
+                        <li>El diseño de algunos enfrentamientos.</li>
+                    </ul>
                     </article>
             </div>
-'            <nav class="menuInfo">'
-                <ul>
-                    <a class="menu" href="#ficha"">FICHA</a>
-                    <a class="menu" href="#requisitos">REQUISITOS</a>
-                    <a class="menu" href="./listado.html">NOTICIAS</a>
-                    <a class="menu" href="./listado.html">AVANCES</a>
-                    <a class="menu" href="./listado.html">ANÁLISIS</a>
-                    <a class="menu" href="./listado.html">IMÁGENES</a>
-                    <a class="menu" href="./listado.html">VÍDEOS</a>
-                </ul>
-            </nav>
             <div class="stickyVideo">
-                <video width="100%" height="100%" frameborder="0" controls avutoplay muted poster="./images/ghostrunner.jpeg">
+                <video width="100%" height="100%" frameborder="0" controls autoplay muted poster="./images/ghostrunner.jpeg">
                      <source src ="./videos/GHOSTRUNNER _ Official 4K Gameplay Trailer.mp4" type="video/mp4">
                   </video>
             </div>
         </section>
-        <section id="noticias" class="infoPaginaJuego">
-            <p class="tituloSinHover"> NOTICIAS RELACIONADAS CON GHOSTRUNNER</p>
+        <section id="galeria" style="scroll-margin-top: 4rem;">
+            <div style="width:100%; text-align: center;">
+                <p class="tituloSinHover">Galeria de GHOSTRUNNER</p>
+            </div>
+            <article class="fotos">
+                <figure>
+                    <img src="./images/ghostrunnerGaleria1.jpg">
+                </figure>
+                <figure>
+                    <img src="./images/ghostrunnerGaleria2.jpg">
+                </figure>
+                <figure>
+                    <img src="./images/ghostrunnerGaleria3.jpg">
+                </figure>
+                <figure>
+                    <img src="./images/ghostrunnerGaleria4.jpg">
+                </figure>
+                <figure>
+                    <img src="./images/ghostrunnerGaleria5.jpg">
+                </figure>
+                <figure>
+                    <img src="./images/ghostrunnerGaleria6.jpg">
+                </figure>
+            </article>
+        </section>
+        <section id="noticias" style="width: 100%; height: auto; position: relative;  scroll-margin-top: 5rem;">
+            <div style="width:100%; text-align: center;">
+                <p class="tituloSinHover">NOTICIAS RELACIONADAS CON GHOSTRUNNER</p>
+            </div>
             <div class="container">
-                <div class = "noticia" id="noticia4">
-                    <p class="hora">15:28 6/10/2023</p>
+                <div class = "noticia">
+                    <p class="hora">13:51 11/9/2023</p>
                     <hr class="line">
-                    <a href="https://vandal.elespanol.com/noticia/1350765908/cd-projekt-no-cierra-la-puerta-a-que-la-secuela-de-cyberpunk-2077-sea-en-tercera-persona/" class="titular">CD Projekt no cierra la puerta a que la secuela de Cyberpunk 2077 sea en tercera persona</a>
-                    <p class="texto2">Un miembro de la desarrolladora polaca explica el motivo por el que Cyberpunk 2077 se diseñó en primera persona y no descarta que se implemente un modo en tercera persona o híbrido en Project Orion.</p>                   
+                    <a href="https://vandal.elespanol.com/noticia/1350765224/ghostrunner-ya-ha-vendido-mas-de-25-millones-de-copias-desde-que-se-lanzo-en-2020/" class="titular">Ghostrunner ya ha vendido más de 2,5 millones de copias desde que se lanzó en 2020</a>
+                    <p class="texto2">One More Level quería anunciar el hito cuando el videojuego alcanzara las 2 millones de unidades vendidas, pero la fiebre por la secuela ha provocado que se hayan alcanzado las 2,5 millones.</p>                   
                     <figure>                   
-                        <img class="imagen" src="./images/noticia4.jpg" alt="Captura del juego en tercera persona">
+                        <img class="imagen" src="./images/ghostrunnerNoticia1.jpg">
                     </figure>
                     <form>
-                        <button formaction="https://vandal.elespanol.com/noticia/1350765908/cd-projekt-no-cierra-la-puerta-a-que-la-secuela-de-cyberpunk-2077-sea-en-tercera-persona/" class="leer">
+                        <button formaction="https://vandal.elespanol.com/noticia/1350765224/ghostrunner-ya-ha-vendido-mas-de-25-millones-de-copias-desde-que-se-lanzo-en-2020/" class="leer">
                             Leer Más
                         </button>
                     </form>
                 </div>
-                <div class = "noticia" id="noticia4">
-                    <p class="hora">15:28 6/10/2023</p>
+                <div class = "noticia">
+                    <p class="hora">13:48 21/8/2023</p>
                     <hr class="line">
-                    <a href="https://vandal.elespanol.com/noticia/1350765908/cd-projekt-no-cierra-la-puerta-a-que-la-secuela-de-cyberpunk-2077-sea-en-tercera-persona/" class="titular">CD Projekt no cierra la puerta a que la secuela de Cyberpunk 2077 sea en tercera persona</a>
-                    <p class="texto2">Un miembro de la desarrolladora polaca explica el motivo por el que Cyberpunk 2077 se diseñó en primera persona y no descarta que se implemente un modo en tercera persona o híbrido en Project Orion.</p>                   
+                    <a href="https://vandal.elespanol.com/noticia/1350764695/ghostrunner-2-se-pondra-a-la-venta-el-26-de-octubre-segun-una-filtracion-de-epic-games/" class="titular">Ghostrunner 2 se pondrá a la venta el 26 de octubre para PS5, Xbox Series X/S y PC</a>
+                    <p class="texto2">Hace apenas unas horas, se ha filtrado a través de Epic Games Store la fecha de lanzamiento de Ghostrunner 2, la cual ya ha sido confirmada por los responsables del título junto a sus ediciones.</p>                   
                     <figure>                   
-                        <img class="imagen" src="./images/noticia4.jpg" alt="Captura del juego en tercera persona">
+                        <img class="imagen" src="./images/ghostrunnerNoticia4.jpg">
                     </figure>
                     <form>
-                        <button formaction="https://vandal.elespanol.com/noticia/1350765908/cd-projekt-no-cierra-la-puerta-a-que-la-secuela-de-cyberpunk-2077-sea-en-tercera-persona/" class="leer">
+                        <button formaction="https://vandal.elespanol.com/noticia/1350764695/ghostrunner-2-se-pondra-a-la-venta-el-26-de-octubre-segun-una-filtracion-de-epic-games/" class="leer">
                             Leer Más
                         </button>
                     </form>
                 </div>
-                <div class = "noticia" id="noticia4">
-                    <p class="hora">15:28 6/10/2023</p>
+                <div class = "noticia">
+                    <p class="hora">17:39 23/2/2022</p>
                     <hr class="line">
-                    <a href="https://vandal.elespanol.com/noticia/1350765908/cd-projekt-no-cierra-la-puerta-a-que-la-secuela-de-cyberpunk-2077-sea-en-tercera-persona/" class="titular">CD Projekt no cierra la puerta a que la secuela de Cyberpunk 2077 sea en tercera persona</a>
-                    <p class="texto2">Un miembro de la desarrolladora polaca explica el motivo por el que Cyberpunk 2077 se diseñó en primera persona y no descarta que se implemente un modo en tercera persona o híbrido en Project Orion.</p>                   
+                    <a href="https://vandal.elespanol.com/noticia/1350751775/juegos-de-ps-plus-de-marzo-ghostrunner-ghost-of-tsushima-legends-team-sonic-racing-y-mas/" class="titular">Juegos de PS Plus de marzo: Ghostrunner, Ghost of Tsushima Legends, Team Sonic Racing y más</a>
+                    <p class="texto2">Los suscriptores de PS Plus podrán conseguir en marzo cuatro nuevos juegos: Ark: Survival Evolved, Ghostrunner, Ghost of Tsushima Legends y Team Sonic Racing. Además de GTA Online y uno más en España.</p>                   
                     <figure>                   
-                        <img class="imagen" src="./images/noticia4.jpg" alt="Captura del juego en tercera persona">
+                        <img class="imagen" src="./images/ghostrunnerNoticia2.jpg">
                     </figure>
                     <form>
-                        <button formaction="https://vandal.elespanol.com/noticia/1350765908/cd-projekt-no-cierra-la-puerta-a-que-la-secuela-de-cyberpunk-2077-sea-en-tercera-persona/" class="leer">
+                        <button formaction="https://vandal.elespanol.com/noticia/1350751775/juegos-de-ps-plus-de-marzo-ghostrunner-ghost-of-tsushima-legends-team-sonic-racing-y-mas/" class="leer">
                             Leer Más
                         </button>
                     </form>
                 </div>
-                <div class = "noticia" id="noticia4">
-                    <p class="hora">15:28 6/10/2023</p>
+                <div class = "noticia">
+                    <p class="hora">18:24 2/8/2021</p>
                     <hr class="line">
-                    <a href="https://vandal.elespanol.com/noticia/1350765908/cd-projekt-no-cierra-la-puerta-a-que-la-secuela-de-cyberpunk-2077-sea-en-tercera-persona/" class="titular">CD Projekt no cierra la puerta a que la secuela de Cyberpunk 2077 sea en tercera persona</a>
-                    <p class="texto2">Un miembro de la desarrolladora polaca explica el motivo por el que Cyberpunk 2077 se diseñó en primera persona y no descarta que se implemente un modo en tercera persona o híbrido en Project Orion.</p>                   
+                    <a href="https://vandal.elespanol.com/noticia/1350746599/nier-automata-ghostrunner-y-undertale-son-los-juegos-de-ps-now-de-agosto/" class="titular">NieR: Automata, Ghostrunner y Undertale son los juegos de PS Now de agosto</a>
+                    <p class="texto2">PlayStation Now amplía su catálogo con tres nuevos videojuegos en agosto: NieR: Automata, Ghostrunner y Undertale. Estarán disponibles a partir de mañana en PS5, PS4 y PC mediante el juego en la nube.</p>                   
                     <figure>                   
-                        <img class="imagen" src="./images/noticia4.jpg" alt="Captura del juego en tercera persona">
+                        <img class="imagen" src="./images/ghostrunnerNoticia3.jpg">
                     </figure>
                     <form>
-                        <button formaction="https://vandal.elespanol.com/noticia/1350765908/cd-projekt-no-cierra-la-puerta-a-que-la-secuela-de-cyberpunk-2077-sea-en-tercera-persona/" class="leer">
+                        <button formaction="https://vandal.elespanol.com/noticia/1350746599/nier-automata-ghostrunner-y-undertale-son-los-juegos-de-ps-now-de-agosto/" class="leer">
                             Leer Más
                         </button>
                     </form>
