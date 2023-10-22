@@ -67,13 +67,15 @@ footer{
 }
 
 .menuInfo{
-    display: flex;
-    flex-direction: column;
     width: 23%; 
-    height: auto; 
+    height: 60%; 
     position: sticky; 
-    top: 50%; 
-    float: left;
+    top: 40%;
+    left: 5%; 
+}
+
+.menuInfo li{
+    margin-top: 20px;
 }
 
 h1{
@@ -81,6 +83,13 @@ h1{
     font-weight: bolder;
     font-size: 1000;
     color: #0A91AB;
+}
+
+h3{
+    font-family: 'Kanit';
+    font-weight: bolder;
+    font-size: 1000;
+    color: #FFC045;
 }
 
 .container{
@@ -93,11 +102,9 @@ h1{
 
 .container2{
     width: 50%; 
-    height: auto;
-    min-height: 5000px; 
+    height: 100%; 
+    padding-bottom: 100px;
     position: relative;
-    top: 30px;
-    left: 25%;
     display: flex; 
     flex-direction: column; 
     contain: paint;
@@ -105,6 +112,42 @@ h1{
     border-width: 2px;
     border-radius: 10px;
     border-color: #0A91AB;
+}
+
+#galeria{
+    width: 90%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 5%;
+    contain: paint;
+}
+
+.fotos{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    contain: paint;
+}
+
+.fotos figure{
+    position: relative;
+    float: left;
+    width: 30%;
+    height: auto;
+    margin-left: 3%;
+    margin-bottom: 35px;
+    object-fit: cover;
+}
+
+.fotos figure img{
+    width: 100%;
+    height: auto;
 }
 
 .contacto{
@@ -132,7 +175,21 @@ h1{
     border-width: 3px;
     border-radius: 5px;
     border-color: black;
+}
+
+#trucos div{
     text-align: center;
+}
+
+#trucos div a{
+    text-align: center;
+}
+
+#trucos hr{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    border: none; 
 }
 
 .juego{
@@ -243,13 +300,39 @@ figcaption{
     object-fit: cover;
 }
 
+.imagenVideo{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    contain: paint;
+}
+
 .poster2{
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 40%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
+    
+}
+
+.video{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagenVideo:hover .poster2{
+    display: none;
+}
+
+.imagenVideo:hover .video{
+    display: block;
 }
 
 .postergrande{
@@ -342,6 +425,8 @@ figcaption{
     margin-right: 15px;
     margin-top: 0;
     font-family: 'Maven Pro';
+    color: black;
+    text-decoration: none;
     font-size: 15px;
     text-align: left;
     line-height: 1.6;
@@ -485,6 +570,16 @@ figcaption{
     width: 23%; 
     height:24%; 
     position: sticky; 
-    bottom: 1%; 
-    float: right; 
+    top: 70%; 
+    left: 75%;
+}
+
+.notaJuego{
+    font-size: 30px; 
+    font-weight: bold;
+}
+
+.nota{
+    width: 50%; 
+    height: 30px;
 }
